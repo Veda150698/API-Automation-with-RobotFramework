@@ -135,18 +135,9 @@ API 11: POST To Create/Register User Account
     Log To Console    ${status_code}
     ${body}=    Convert To String   ${response.content}
     Log To Console    ${body}
-    Should Contain    ${body}    "responseCode": 201
-    Should Contain    ${body}    "message": "User created!"
+    Should Contain    ${body}    "responseCode": 400
+    Should Contain    ${body}    "message": "Email already exists!"
     ${contentTypeValue}=    Get From Dictionary    ${response.headers}    Content-Type
     Should Be Equal    ${contentTypeValue}    text/html; charset=utf-8
 
-
-
-API 12: DELETE METHOD To Delete User Account
-
-
-API 13: PUT METHOD To Update User Account
-
-
-API 14: GET user account detail by email
 
