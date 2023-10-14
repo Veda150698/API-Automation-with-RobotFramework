@@ -1,5 +1,9 @@
-*.log
+node_modules
+*.gitignore
 *.xml
-temp/
+*.log
+*.json
 *env.json
-*json
+*.html
+*log.html
+*report.html
