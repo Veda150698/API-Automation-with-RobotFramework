@@ -1,670 +1,672 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.10.12 on linux)" generated="20231014 22:08:14.262" rpa="false" schemaversion="3">
-<suite id="s1" name="REST-API-Automation" source="/home/adityadwic/Desktop/Materi/API-Automation-with-RobotFramework/TestCase/REST-API-Automation.robot">
-<test id="s1-t1" name="API 1: Get All Products List" line="7">
-<kw name="GET" library="RequestsLibrary">
+<robot generator="Robot 7.3.2 (Python 3.13.5 on darwin)" generated="2025-08-31T11:48:47.785083" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCase" source="/Users/veda Bits project work/Test projects/API-Automation-with-RobotFramework/TestCase">
+<suite id="s1-s1" name="API-Automation" source="/Users/veda Bits project work/Test projects/API-Automation-with-RobotFramework/TestCase/API-Automation.robot">
+<test id="s1-s1-t1" name="API 1: Get All Products List" line="7">
+<kw name="GET" owner="RequestsLibrary">
+<msg time="2025-08-31T11:48:48.994334" level="INFO">GET Request : url=https://automationexercise.com/api/productsList 
+ path_url=/api/productsList 
+ headers={'User-Agent': 'python-requests/2.32.4', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2025-08-31T11:48:48.994573" level="INFO">GET Response : url=https://automationexercise.com/api/productsList 
+ status=200, reason=OK 
+ headers={'Date': 'Sun, 31 Aug 2025 06:18:48 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'vary': 'Accept,Cookie,Accept-Encoding', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'PUT, GET, OPTIONS, DELETE, POST', 'x-powered-by': 'Phusion Passenger(R) 6.0.23', 'status': '200 OK', 'Report-To': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=BLgGCRbpW2z7nn7skkCQUy3vkU9cePugXWbKtzp1CgzqyyBhUvH1ZXIyNRcENV21BsMcuTxtRdX7aNnikZe%2BpCo5ZzUb6Z4QTedLz4cg7eROBHOVVic%3D"}]}', 'Server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'Nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'Content-Encoding': 'gzip', 'CF-RAY': '977a69a1697cb85f-BOM', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={"responseCode": 200, "products": [{"id": 1, "name": "Blue Top", "price": "Rs. 500", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 2, "name": "Men Tshirt", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 3, "name": "Sleeveless Dress", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 4, "name": "Stylish Dress", "price": "Rs. 1500", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 5, "name": "Winter Top", "price": "Rs. 600", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 6, "name": "Summer White Top", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 7, "name": "Madame Top For Women", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 8, "name": "Fancy Green Top", "price": "Rs. 700", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 11, "name": "Sleeves Printed Top - White", "price": "Rs. 499", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 12, "name": "Half Sleeves Top Schiffli Detailing - Pink", "price": "Rs. 359", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 13, "name": "Frozen Tops For Kids", "price": "Rs. 278", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 14, "name": "Full Sleeves Top Cherry - Pink", "price": "Rs. 679", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 15, "name": "Printed Off Shoulder Top - White", "price": "Rs. 315", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 16, "name": "Sleeves Top and Short - Blue &amp; Pink", "price": "Rs. 478", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 18, "name": "Little Girls Mr. Panda Shirt", "price": "Rs. 1200", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 19, "name": "Sleeveless Unicorn Patch Gown - Pink", "price": "Rs. 1050", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 20, "name": "Cotton Mull Embroidered Dress", "price": "Rs. 1190", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 21, "name": "Blue Cotton Indie Mickey Dress", "price": "Rs. 1530", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 22, "name": "Long Maxi Tulle Fancy Dress Up Outfits -Pink", "price": "Rs. 1600", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 23, "name": "Sleeveless Unicorn Print Fit &amp; Flare Net Dress - Multi", "price": "Rs. 1100", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 24, "name": "Colour Blocked Shirt \u2013 Sky Blue", "price": "Rs. 849", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 28, "name": "Pure Cotton V-Neck T-Shirt", "price": "Rs. 1299", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 29, "name": "Green Side Placket Detail T-Shirt", "price": "Rs. 1000", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 30, "name": "Premium Polo T-Shirts", "price": "Rs. 1500", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 31, "name": "Pure Cotton Neon Green Tshirt", "price": "Rs. 850", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 33, "name": "Soft Stretch Jeans", "price": "Rs. 799", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 35, "name": "Regular Fit Straight Jeans", "price": "Rs. 1200", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 37, "name": "Grunt Blue Slim Fit Jeans", "price": "Rs. 1400", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 38, "name": "Rose Pink Embroidered Maxi Dress", "price": "Rs. 2300", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 39, "name": "Cotton Silk Hand Block Print Saree", "price": "Rs. 3000", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 40, "name": "Rust Red Linen Saree", "price": "Rs. 3500", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 41, "name": "Beautiful Peacock Blue Cotton Linen Saree", "price": "Rs. 5000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 42, "name": "Lace Top For Women", "price": "Rs. 1400", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 43, "name": "GRAPHIC DESIGN MEN T SHIRT - BLUE", "price": "Rs. 1389", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}]} 
+ </msg>
+<msg time="2025-08-31T11:48:48.994846" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
 <arg>https://automationexercise.com/api/productsList</arg>
 <doc>Sends a GET request.</doc>
-<msg timestamp="20231014 22:08:15.510" level="INFO">GET Request : url=https://automationexercise.com/api/productsList 
- path_url=/api/productsList 
- headers={'User-Agent': 'python-requests/2.25.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
- body=None 
- </msg>
-<msg timestamp="20231014 22:08:15.511" level="INFO">GET Response : url=https://automationexercise.com/api/productsList 
- status=200, reason=OK 
- headers={'Date': 'Sat, 14 Oct 2023 15:08:15 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'vary': 'Accept,Cookie,Accept-Encoding', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'PUT, DELETE, OPTIONS, POST, GET', 'x-powered-by': 'Phusion Passenger 6.0.7', 'status': '200 OK', 'CF-Cache-Status': 'DYNAMIC', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=%2BYBsUF6hUi4qm19OgLCVDfc3SX2ojZRebv1RsudiLlOaownR0CV1hNIPlDIYDBNwtKfwPMqlzSGjZIE5ekhtsUrqh7ap9929O5lXGAJr8zPYeAiW2SY2JOn9nu0%2BvUOAJwD1Rk1WIZtA"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '8160bc8f5d885f32-SIN', 'Content-Encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400'} 
- body={"responseCode": 200, "products": [{"id": 1, "name": "Blue Top", "price": "Rs. 500", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 2, "name": "Men Tshirt", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 3, "name": "Sleeveless Dress", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 4, "name": "Stylish Dress", "price": "Rs. 1500", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 5, "name": "Winter Top", "price": "Rs. 600", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 6, "name": "Summer White Top", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 7, "name": "Madame Top For Women", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 8, "name": "Fancy Green Top", "price": "Rs. 700", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 11, "name": "Sleeves Printed Top - White", "price": "Rs. 499", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 12, "name": "Half Sleeves Top Schiffli Detailing - Pink", "price": "Rs. 359", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 13, "name": "Frozen Tops For Kids", "price": "Rs. 278", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 14, "name": "Full Sleeves Top Cherry - Pink", "price": "Rs. 679", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 15, "name": "Printed Off Shoulder Top - White", "price": "Rs. 315", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 16, "name": "Sleeves Top and Short - Blue &amp; Pink", "price": "Rs. 478", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 18, "name": "Little Girls Mr. Panda Shirt", "price": "Rs. 1200", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 19, "name": "Sleeveless Unicorn Patch Gown - Pink", "price": "Rs. 1050", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 20, "name": "Cotton Mull Embroidered Dress", "price": "Rs. 1190", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 21, "name": "Blue Cotton Indie Mickey Dress", "price": "Rs. 1530", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 22, "name": "Long Maxi Tulle Fancy Dress Up Outfits -Pink", "price": "Rs. 1600", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 23, "name": "Sleeveless Unicorn Print Fit &amp; Flare Net Dress - Multi", "price": "Rs. 1100", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 24, "name": "Colour Blocked Shirt \u2013 Sky Blue", "price": "Rs. 849", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 28, "name": "Pure Cotton V-Neck T-Shirt", "price": "Rs. 1299", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 29, "name": "Green Side Placket Detail T-Shirt", "price": "Rs. 1000", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 30, "name": "Premium Polo T-Shirts", "price": "Rs. 1500", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 31, "name": "Pure Cotton Neon Green Tshirt", "price": "Rs. 850", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 33, "name": "Soft Stretch Jeans", "price": "Rs. 799", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 35, "name": "Regular Fit Straight Jeans", "price": "Rs. 1200", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 37, "name": "Grunt Blue Slim Fit Jeans", "price": "Rs. 1400", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 38, "name": "Rose Pink Embroidered Maxi Dress", "price": "Rs. 2300", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 39, "name": "Cotton Silk Hand Block Print Saree", "price": "Rs. 3000", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 40, "name": "Rust Red Linen Saree", "price": "Rs. 3500", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 41, "name": "Beautiful Peacock Blue Cotton Linen Saree", "price": "Rs. 5000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 42, "name": "Lace Top For Women", "price": "Rs. 1400", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 43, "name": "GRAPHIC DESIGN MEN T SHIRT - BLUE", "price": "Rs. 1389", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}]} 
- </msg>
-<msg timestamp="20231014 22:08:15.511" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20231014 22:08:14.351" endtime="20231014 22:08:15.512"/>
+<status status="PASS" start="2025-08-31T11:48:47.885170" elapsed="1.109703"/>
 </kw>
-<kw name="Convert To String" library="BuiltIn">
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2025-08-31T11:48:48.996030" level="INFO">${status_code} = 200</msg>
 <var>${status_code}</var>
 <arg>${response.status_code}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20231014 22:08:15.514" level="INFO">${status_code} = 200</msg>
-<status status="PASS" starttime="20231014 22:08:15.512" endtime="20231014 22:08:15.514"/>
+<status status="PASS" start="2025-08-31T11:48:48.995280" elapsed="0.000790"/>
 </kw>
-<kw name="Should Be Equal" library="BuiltIn">
+<kw name="Should Be Equal" owner="BuiltIn">
 <arg>${status_code}</arg>
 <arg>200</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20231014 22:08:15.514" endtime="20231014 22:08:15.515"/>
+<status status="PASS" start="2025-08-31T11:48:48.996274" elapsed="0.000195"/>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
 <arg>${status_code}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231014 22:08:15.516" endtime="20231014 22:08:15.516"/>
+<status status="PASS" start="2025-08-31T11:48:48.996659" elapsed="0.000128"/>
 </kw>
-<kw name="Convert To String" library="BuiltIn">
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2025-08-31T11:48:48.997293" level="INFO">${body} = {"responseCode": 200, "products": [{"id": 1, "name": "Blue Top", "price": "Rs. 500", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 2, "name": "Men Tshir...</msg>
 <var>${body}</var>
 <arg>${response.content}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20231014 22:08:15.518" level="INFO">${body} = {"responseCode": 200, "products": [{"id": 1, "name": "Blue Top", "price": "Rs. 500", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 2, "name": "Men Tshir...</msg>
-<status status="PASS" starttime="20231014 22:08:15.517" endtime="20231014 22:08:15.518"/>
+<status status="PASS" start="2025-08-31T11:48:48.996883" elapsed="0.000435"/>
 </kw>
-<kw name="Should Contain" library="BuiltIn">
+<kw name="Should Contain" owner="BuiltIn">
 <arg>${body}</arg>
 <arg>Polo</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" starttime="20231014 22:08:15.518" endtime="20231014 22:08:15.518"/>
+<status status="PASS" start="2025-08-31T11:48:48.997422" elapsed="0.000114"/>
 </kw>
-<kw name="Get From Dictionary" library="Collections">
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-08-31T11:48:48.997982" level="INFO">${contentTypeValue} = text/html; charset=utf-8</msg>
 <var>${contentTypeValue}</var>
 <arg>${response.headers}</arg>
 <arg>Content-Type</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20231014 22:08:15.520" level="INFO">${contentTypeValue} = text/html; charset=utf-8</msg>
-<status status="PASS" starttime="20231014 22:08:15.519" endtime="20231014 22:08:15.520"/>
+<status status="PASS" start="2025-08-31T11:48:48.997632" elapsed="0.000373"/>
 </kw>
-<kw name="Should Be Equal" library="BuiltIn">
+<kw name="Should Be Equal" owner="BuiltIn">
 <arg>${contentTypeValue}</arg>
 <arg>text/html; charset=utf-8</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20231014 22:08:15.520" endtime="20231014 22:08:15.521"/>
+<status status="PASS" start="2025-08-31T11:48:48.998107" elapsed="0.000145"/>
 </kw>
-<status status="PASS" starttime="20231014 22:08:14.350" endtime="20231014 22:08:15.521"/>
+<status status="PASS" start="2025-08-31T11:48:47.884853" elapsed="1.113528"/>
 </test>
-<test id="s1-t2" name="API 2: POST To All Products List" line="19">
-<kw name="POST" library="RequestsLibrary">
+<test id="s1-s1-t2" name="API 2: POST To All Products List" line="19">
+<kw name="POST" owner="RequestsLibrary">
+<msg time="2025-08-31T11:48:50.043040" level="INFO">POST Request : url=https://automationexercise.com/api/productsList 
+ path_url=/api/productsList 
+ headers={'User-Agent': 'python-requests/2.32.4', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '0'} 
+ body=None 
+ </msg>
+<msg time="2025-08-31T11:48:50.043363" level="INFO">POST Response : url=https://automationexercise.com/api/productsList 
+ status=200, reason=OK 
+ headers={'Date': 'Sun, 31 Aug 2025 06:18:50 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'vary': 'Accept,Cookie,Accept-Encoding', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'PUT, GET, OPTIONS, DELETE, POST', 'x-powered-by': 'Phusion Passenger(R) 6.0.23', 'status': '200 OK', 'Report-To': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=NlouXI2yx97H5DWJ0blNCYEY0JZih5GCmW5y48s%2FIlVPWAmSNksk%2BD0qU3NST9T%2B1Gc5UkOr3KmVpYGB4otTKEswD5c2Wu%2FE7pAG0ptJHbDMlIM7FYI%3D"}]}', 'Server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'Nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'Content-Encoding': 'gzip', 'CF-RAY': '977a69a84af43a99-BOM', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={"responseCode": 405, "message": "This request method is not supported."} 
+ </msg>
+<msg time="2025-08-31T11:48:50.044210" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
 <arg>https://automationexercise.com/api/productsList</arg>
 <doc>Sends a POST request.</doc>
-<msg timestamp="20231014 22:08:16.637" level="INFO">POST Request : url=https://automationexercise.com/api/productsList 
- path_url=/api/productsList 
- headers={'User-Agent': 'python-requests/2.25.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '0'} 
- body=None 
- </msg>
-<msg timestamp="20231014 22:08:16.638" level="INFO">POST Response : url=https://automationexercise.com/api/productsList 
- status=200, reason=OK 
- headers={'Date': 'Sat, 14 Oct 2023 15:08:16 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'vary': 'Accept,Cookie,Accept-Encoding', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'PUT, DELETE, OPTIONS, POST, GET', 'x-powered-by': 'Phusion Passenger 6.0.7', 'status': '200 OK', 'CF-Cache-Status': 'DYNAMIC', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=SHtahsGCG4G2ymK1Enjtx7XFUp6%2BEW0Wd9DjmfExYCABIXQhFZdyIKxexiWEputduEUGJMYJGZ9rTDCoBjQ4Ykl82aegM3dMKmKnNq34l1Fee%2F5riTR3ybxWcPRQ0OpumImA2FkiiML0"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '8160bc970c99a3f4-SIN', 'Content-Encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400'} 
- body={"responseCode": 405, "message": "This request method is not supported."} 
- </msg>
-<msg timestamp="20231014 22:08:16.638" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20231014 22:08:15.522" endtime="20231014 22:08:16.638"/>
+<status status="PASS" start="2025-08-31T11:48:48.998861" elapsed="1.045411"/>
 </kw>
-<kw name="Convert To String" library="BuiltIn">
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2025-08-31T11:48:50.045529" level="INFO">${status_code} = 200</msg>
 <var>${status_code}</var>
 <arg>${response.status_code}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20231014 22:08:16.639" level="INFO">${status_code} = 200</msg>
-<status status="PASS" starttime="20231014 22:08:16.638" endtime="20231014 22:08:16.639"/>
+<status status="PASS" start="2025-08-31T11:48:50.044725" elapsed="0.000835"/>
 </kw>
-<kw name="Should Be Equal" library="BuiltIn">
+<kw name="Should Be Equal" owner="BuiltIn">
 <arg>${status_code}</arg>
 <arg>200</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20231014 22:08:16.639" endtime="20231014 22:08:16.640"/>
+<status status="PASS" start="2025-08-31T11:48:50.045724" elapsed="0.000189"/>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
 <arg>${status_code}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231014 22:08:16.640" endtime="20231014 22:08:16.641"/>
+<status status="PASS" start="2025-08-31T11:48:50.046035" elapsed="0.000137"/>
 </kw>
-<status status="PASS" starttime="20231014 22:08:15.521" endtime="20231014 22:08:16.641"/>
+<status status="PASS" start="2025-08-31T11:48:48.998576" elapsed="1.047773"/>
 </test>
-<test id="s1-t3" name="API 3: Get All Brands List" line="26">
-<kw name="GET" library="RequestsLibrary">
+<test id="s1-s1-t3" name="API 3: Get All Brands List" line="26">
+<kw name="GET" owner="RequestsLibrary">
+<msg time="2025-08-31T11:48:51.157694" level="INFO">GET Request : url=https://automationexercise.com/api/brandsList 
+ path_url=/api/brandsList 
+ headers={'User-Agent': 'python-requests/2.32.4', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2025-08-31T11:48:51.157929" level="INFO">GET Response : url=https://automationexercise.com/api/brandsList 
+ status=200, reason=OK 
+ headers={'Date': 'Sun, 31 Aug 2025 06:18:51 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'vary': 'Accept,Cookie,Accept-Encoding', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'PUT, GET, OPTIONS, DELETE, POST', 'x-powered-by': 'Phusion Passenger(R) 6.0.23', 'status': '200 OK', 'Report-To': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=e329sTh0B2CkjikaGVHDHnlZVpMo5oo5ql%2BCDd%2BR2N1WvUVNn1Q4tzmfqvJpi%2Ff%2FnKeuEkF%2BqX9aw2uzB4GuhlbxEZkJVfDJZUcW29Py6RsA6dhWXaE%3D"}]}', 'Server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'Nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'Content-Encoding': 'gzip', 'CF-RAY': '977a69aedeaa4910-BOM', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={"responseCode": 200, "brands": [{"id": 1, "brand": "Polo"}, {"id": 2, "brand": "H&amp;M"}, {"id": 3, "brand": "Madame"}, {"id": 4, "brand": "Madame"}, {"id": 5, "brand": "Mast &amp; Harbour"}, {"id": 6, "brand": "H&amp;M"}, {"id": 7, "brand": "Madame"}, {"id": 8, "brand": "Polo"}, {"id": 11, "brand": "Babyhug"}, {"id": 12, "brand": "Babyhug"}, {"id": 13, "brand": "Allen Solly Junior"}, {"id": 14, "brand": "Kookie Kids"}, {"id": 15, "brand": "Babyhug"}, {"id": 16, "brand": "Babyhug"}, {"id": 18, "brand": "Kookie Kids"}, {"id": 19, "brand": "Allen Solly Junior"}, {"id": 20, "brand": "Kookie Kids"}, {"id": 21, "brand": "Biba"}, {"id": 22, "brand": "Biba"}, {"id": 23, "brand": "Biba"}, {"id": 24, "brand": "Allen Solly Junior"}, {"id": 28, "brand": "H&amp;M"}, {"id": 29, "brand": "Polo"}, {"id": 30, "brand": "Polo"}, {"id": 31, "brand": "H&amp;M"}, {"id": 33, "brand": "Polo"}, {"id": 35, "brand": "H&amp;M"}, {"id": 37, "brand": "Polo"}, {"id": 38, "brand": "Madame"}, {"id": 39, "brand": "Biba"}, {"id": 40, "brand": "Biba"}, {"id": 41, "brand": "Madame"}, {"id": 42, "brand": "Mast &amp; Harbour"}, {"id": 43, "brand": "Mast &amp; Harbour"}]} 
+ </msg>
+<msg time="2025-08-31T11:48:51.158243" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
 <arg>https://automationexercise.com/api/brandsList</arg>
 <doc>Sends a GET request.</doc>
-<msg timestamp="20231014 22:08:17.863" level="INFO">GET Request : url=https://automationexercise.com/api/brandsList 
- path_url=/api/brandsList 
- headers={'User-Agent': 'python-requests/2.25.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
- body=None 
- </msg>
-<msg timestamp="20231014 22:08:17.864" level="INFO">GET Response : url=https://automationexercise.com/api/brandsList 
- status=200, reason=OK 
- headers={'Date': 'Sat, 14 Oct 2023 15:08:17 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'vary': 'Accept,Cookie,Accept-Encoding', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'PUT, DELETE, OPTIONS, POST, GET', 'x-powered-by': 'Phusion Passenger 6.0.7', 'status': '200 OK', 'CF-Cache-Status': 'DYNAMIC', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=r5mnk8ZSI%2BtZmb1qxPzmKFPlU1tmsqhzBxHolwwqLxupBEoGmNCpMKsmR%2FCHmkzJrJEzIgIU81mVJIcLRFQSswuTDb%2F%2F9IULY6%2BatcttsUFW7Fdr0qQh%2F68Ol3KXKnbckKJ1foBZk8ub"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '8160bc9e0c3d40c7-SIN', 'Content-Encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400'} 
- body={"responseCode": 200, "brands": [{"id": 1, "brand": "Polo"}, {"id": 2, "brand": "H&amp;M"}, {"id": 3, "brand": "Madame"}, {"id": 4, "brand": "Madame"}, {"id": 5, "brand": "Mast &amp; Harbour"}, {"id": 6, "brand": "H&amp;M"}, {"id": 7, "brand": "Madame"}, {"id": 8, "brand": "Polo"}, {"id": 11, "brand": "Babyhug"}, {"id": 12, "brand": "Babyhug"}, {"id": 13, "brand": "Allen Solly Junior"}, {"id": 14, "brand": "Kookie Kids"}, {"id": 15, "brand": "Babyhug"}, {"id": 16, "brand": "Babyhug"}, {"id": 18, "brand": "Kookie Kids"}, {"id": 19, "brand": "Allen Solly Junior"}, {"id": 20, "brand": "Kookie Kids"}, {"id": 21, "brand": "Biba"}, {"id": 22, "brand": "Biba"}, {"id": 23, "brand": "Biba"}, {"id": 24, "brand": "Allen Solly Junior"}, {"id": 28, "brand": "H&amp;M"}, {"id": 29, "brand": "Polo"}, {"id": 30, "brand": "Polo"}, {"id": 31, "brand": "H&amp;M"}, {"id": 33, "brand": "Polo"}, {"id": 35, "brand": "H&amp;M"}, {"id": 37, "brand": "Polo"}, {"id": 38, "brand": "Madame"}, {"id": 39, "brand": "Biba"}, {"id": 40, "brand": "Biba"}, {"id": 41, "brand": "Madame"}, {"id": 42, "brand": "Mast &amp; Harbour"}, {"id": 43, "brand": "Mast &amp; Harbour"}]} 
- </msg>
-<msg timestamp="20231014 22:08:17.864" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20231014 22:08:16.643" endtime="20231014 22:08:17.864"/>
+<status status="PASS" start="2025-08-31T11:48:50.046934" elapsed="1.111364"/>
 </kw>
-<kw name="Convert To String" library="BuiltIn">
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2025-08-31T11:48:51.159375" level="INFO">${status_code} = 200</msg>
 <var>${status_code}</var>
 <arg>${response.status_code}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20231014 22:08:17.865" level="INFO">${status_code} = 200</msg>
-<status status="PASS" starttime="20231014 22:08:17.864" endtime="20231014 22:08:17.865"/>
+<status status="PASS" start="2025-08-31T11:48:51.158639" elapsed="0.000766"/>
 </kw>
-<kw name="Should Be Equal" library="BuiltIn">
+<kw name="Should Be Equal" owner="BuiltIn">
 <arg>${status_code}</arg>
 <arg>200</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20231014 22:08:17.866" endtime="20231014 22:08:17.866"/>
+<status status="PASS" start="2025-08-31T11:48:51.159572" elapsed="0.000186"/>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
 <arg>${status_code}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231014 22:08:17.866" endtime="20231014 22:08:17.868"/>
+<status status="PASS" start="2025-08-31T11:48:51.159872" elapsed="0.000130"/>
 </kw>
-<kw name="Convert To String" library="BuiltIn">
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2025-08-31T11:48:51.160625" level="INFO">${body} = {"responseCode": 200, "brands": [{"id": 1, "brand": "Polo"}, {"id": 2, "brand": "H&amp;M"}, {"id": 3, "brand": "Madame"}, {"id": 4, "brand": "Madame"}, {"id": 5, "brand": "Mast &amp; Harbour"}, {"id": 6, "bra...</msg>
 <var>${body}</var>
 <arg>${response.content}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20231014 22:08:17.871" level="INFO">${body} = {"responseCode": 200, "brands": [{"id": 1, "brand": "Polo"}, {"id": 2, "brand": "H&amp;M"}, {"id": 3, "brand": "Madame"}, {"id": 4, "brand": "Madame"}, {"id": 5, "brand": "Mast &amp; Harbour"}, {"id": 6, "bra...</msg>
-<status status="PASS" starttime="20231014 22:08:17.870" endtime="20231014 22:08:17.871"/>
+<status status="PASS" start="2025-08-31T11:48:51.160097" elapsed="0.000552"/>
 </kw>
-<kw name="Should Contain" library="BuiltIn">
+<kw name="Should Contain" owner="BuiltIn">
 <arg>${body}</arg>
 <arg>Polo</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" starttime="20231014 22:08:17.872" endtime="20231014 22:08:17.872"/>
+<status status="PASS" start="2025-08-31T11:48:51.160754" elapsed="0.000111"/>
 </kw>
-<kw name="Get From Dictionary" library="Collections">
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-08-31T11:48:51.161305" level="INFO">${contentTypeValue} = text/html; charset=utf-8</msg>
 <var>${contentTypeValue}</var>
 <arg>${response.headers}</arg>
 <arg>Content-Type</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20231014 22:08:17.874" level="INFO">${contentTypeValue} = text/html; charset=utf-8</msg>
-<status status="PASS" starttime="20231014 22:08:17.873" endtime="20231014 22:08:17.874"/>
+<status status="PASS" start="2025-08-31T11:48:51.160956" elapsed="0.000369"/>
 </kw>
-<kw name="Should Be Equal" library="BuiltIn">
+<kw name="Should Be Equal" owner="BuiltIn">
 <arg>${contentTypeValue}</arg>
 <arg>text/html; charset=utf-8</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20231014 22:08:17.874" endtime="20231014 22:08:17.875"/>
+<status status="PASS" start="2025-08-31T11:48:51.161422" elapsed="0.000140"/>
 </kw>
-<status status="PASS" starttime="20231014 22:08:16.642" endtime="20231014 22:08:17.875"/>
+<status status="PASS" start="2025-08-31T11:48:50.046594" elapsed="1.115100"/>
 </test>
-<test id="s1-t4" name="API 4: PUT To All Brands List" line="38">
-<kw name="PUT" library="RequestsLibrary">
+<test id="s1-s1-t4" name="API 4: PUT To All Brands List" line="38">
+<kw name="PUT" owner="RequestsLibrary">
+<msg time="2025-08-31T11:48:52.203215" level="INFO">PUT Request : url=https://automationexercise.com/api/brandsList 
+ path_url=/api/brandsList 
+ headers={'User-Agent': 'python-requests/2.32.4', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '0'} 
+ body=None 
+ </msg>
+<msg time="2025-08-31T11:48:52.203455" level="INFO">PUT Response : url=https://automationexercise.com/api/brandsList 
+ status=200, reason=OK 
+ headers={'Date': 'Sun, 31 Aug 2025 06:18:52 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'vary': 'Accept,Cookie,Accept-Encoding', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'PUT, GET, OPTIONS, DELETE, POST', 'x-powered-by': 'Phusion Passenger(R) 6.0.23', 'status': '200 OK', 'Report-To': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=NtOTBTGXsf659rvhx7B0MeSPFzHGO5bqoyEtx11j1qmCymt9WD5GZdRV4P2kvxrCrxcU1vPJ0vP7tpwi0%2BVNYOygsT52ptsL98gPWi5o3JRh%2FfvJ8VA%3D"}]}', 'Server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'Nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'Content-Encoding': 'gzip', 'CF-RAY': '977a69b5cba4d89e-BOM', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={"responseCode": 405, "message": "This request method is not supported."} 
+ </msg>
+<msg time="2025-08-31T11:48:52.203744" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
 <arg>https://automationexercise.com/api/brandsList</arg>
 <doc>Sends a PUT request.</doc>
-<msg timestamp="20231014 22:08:18.992" level="INFO">PUT Request : url=https://automationexercise.com/api/brandsList 
- path_url=/api/brandsList 
- headers={'User-Agent': 'python-requests/2.25.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '0'} 
- body=None 
- </msg>
-<msg timestamp="20231014 22:08:18.992" level="INFO">PUT Response : url=https://automationexercise.com/api/brandsList 
- status=200, reason=OK 
- headers={'Date': 'Sat, 14 Oct 2023 15:08:18 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'vary': 'Accept,Cookie,Accept-Encoding', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'PUT, DELETE, OPTIONS, POST, GET', 'x-powered-by': 'Phusion Passenger 6.0.7', 'status': '200 OK', 'CF-Cache-Status': 'DYNAMIC', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=lYY%2Bzgp%2BQYPQDMoQrEXZ986YWUnekikPyfRodcqBwduiWaX8juSWfaYrW7F4XTSL8FR5CG21cTdDa0EnNiMZ2eM15yLGMJJRW1KFwM0BjaqpF8D00t7mxGkMjk5FEBUJD9a%2Bb0Q%2BY4To"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '8160bca5bae44047-SIN', 'Content-Encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400'} 
- body={"responseCode": 405, "message": "This request method is not supported."} 
- </msg>
-<msg timestamp="20231014 22:08:18.993" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20231014 22:08:17.878" endtime="20231014 22:08:18.993"/>
+<status status="PASS" start="2025-08-31T11:48:51.162237" elapsed="1.041557"/>
 </kw>
-<kw name="Convert To String" library="BuiltIn">
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2025-08-31T11:48:52.205254" level="INFO">${status_code} = 200</msg>
 <var>${status_code}</var>
 <arg>${response.status_code}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20231014 22:08:18.995" level="INFO">${status_code} = 200</msg>
-<status status="PASS" starttime="20231014 22:08:18.993" endtime="20231014 22:08:18.995"/>
+<status status="PASS" start="2025-08-31T11:48:52.204235" elapsed="0.001070"/>
 </kw>
-<kw name="Should Be Equal" library="BuiltIn">
+<kw name="Should Be Equal" owner="BuiltIn">
 <arg>${status_code}</arg>
 <arg>200</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20231014 22:08:18.995" endtime="20231014 22:08:18.996"/>
+<status status="PASS" start="2025-08-31T11:48:52.205556" elapsed="0.000161"/>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
 <arg>${status_code}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231014 22:08:18.996" endtime="20231014 22:08:18.997"/>
+<status status="PASS" start="2025-08-31T11:48:52.205798" elapsed="0.000085"/>
 </kw>
-<kw name="Get From Dictionary" library="Collections">
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-08-31T11:48:52.206292" level="INFO">${contentTypeValue} = text/html; charset=utf-8</msg>
 <var>${contentTypeValue}</var>
 <arg>${response.headers}</arg>
 <arg>Content-Type</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20231014 22:08:19.000" level="INFO">${contentTypeValue} = text/html; charset=utf-8</msg>
-<status status="PASS" starttime="20231014 22:08:18.997" endtime="20231014 22:08:19.000"/>
+<status status="PASS" start="2025-08-31T11:48:52.205952" elapsed="0.000356"/>
 </kw>
-<kw name="Should Be Equal" library="BuiltIn">
+<kw name="Should Be Equal" owner="BuiltIn">
 <arg>${contentTypeValue}</arg>
 <arg>text/html; charset=utf-8</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20231014 22:08:19.001" endtime="20231014 22:08:19.003"/>
+<status status="PASS" start="2025-08-31T11:48:52.206382" elapsed="0.000099"/>
 </kw>
-<status status="PASS" starttime="20231014 22:08:17.877" endtime="20231014 22:08:19.004"/>
+<status status="PASS" start="2025-08-31T11:48:51.161891" elapsed="1.044695"/>
 </test>
-<test id="s1-t5" name="API 5: POST To Search Product" line="48">
-<kw name="Create Dictionary" library="BuiltIn">
+<test id="s1-s1-t5" name="API 5: POST To Search Product" line="48">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-08-31T11:48:52.207346" level="INFO">${body} = {'search_product': 'top'}</msg>
 <var>${body}</var>
 <arg>search_product=top</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20231014 22:08:19.006" level="INFO">${body} = {'search_product': 'top'}</msg>
-<status status="PASS" starttime="20231014 22:08:19.005" endtime="20231014 22:08:19.006"/>
+<status status="PASS" start="2025-08-31T11:48:52.207045" elapsed="0.000318"/>
 </kw>
-<kw name="POST" library="RequestsLibrary">
+<kw name="POST" owner="RequestsLibrary">
+<msg time="2025-08-31T11:48:53.276013" level="INFO">POST Request : url=https://automationexercise.com/api/searchProduct 
+ path_url=/api/searchProduct 
+ headers={'User-Agent': 'python-requests/2.32.4', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '18', 'Content-Type': 'application/x-www-form-urlencoded'} 
+ body=search_product=top 
+ </msg>
+<msg time="2025-08-31T11:48:53.276246" level="INFO">POST Response : url=https://automationexercise.com/api/searchProduct 
+ status=200, reason=OK 
+ headers={'Date': 'Sun, 31 Aug 2025 06:18:53 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'vary': 'Accept,Cookie,Accept-Encoding', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'PUT, GET, OPTIONS, DELETE, POST', 'x-powered-by': 'Phusion Passenger(R) 6.0.23', 'status': '200 OK', 'Report-To': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=R2JtitNHp6NvMmiU7JYkaqTMsEElerAB1G7eKO91Ua%2BSALTf5NnTcPRuWIxjBSPNQ0lknQafNEIUNI%2B8Cs7DQgE42cBGKXgMl4r6NMtC%2FJBlay3JKGU%3D"}]}', 'Server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'Nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'Content-Encoding': 'gzip', 'CF-RAY': '977a69bc488a473a-BOM', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={"responseCode": 200, "products": [{"id": 1, "name": "Blue Top", "price": "Rs. 500", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 5, "name": "Winter Top", "price": "Rs. 600", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 6, "name": "Summer White Top", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 7, "name": "Madame Top For Women", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 8, "name": "Fancy Green Top", "price": "Rs. 700", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 11, "name": "Sleeves Printed Top - White", "price": "Rs. 499", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 12, "name": "Half Sleeves Top Schiffli Detailing - Pink", "price": "Rs. 359", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 13, "name": "Frozen Tops For Kids", "price": "Rs. 278", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 14, "name": "Full Sleeves Top Cherry - Pink", "price": "Rs. 679", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 15, "name": "Printed Off Shoulder Top - White", "price": "Rs. 315", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 16, "name": "Sleeves Top and Short - Blue &amp; Pink", "price": "Rs. 478", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 18, "name": "Little Girls Mr. Panda Shirt", "price": "Rs. 1200", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 24, "name": "Colour Blocked Shirt \u2013 Sky Blue", "price": "Rs. 849", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 42, "name": "Lace Top For Women", "price": "Rs. 1400", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}]} 
+ </msg>
+<msg time="2025-08-31T11:48:53.276921" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
 <arg>https://automationexercise.com/api/searchProduct</arg>
 <arg>data=${body}</arg>
 <doc>Sends a POST request.</doc>
-<msg timestamp="20231014 22:08:20.220" level="INFO">POST Request : url=https://automationexercise.com/api/searchProduct 
- path_url=/api/searchProduct 
- headers={'User-Agent': 'python-requests/2.25.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '18', 'Content-Type': 'application/x-www-form-urlencoded'} 
- body=search_product=top 
- </msg>
-<msg timestamp="20231014 22:08:20.221" level="INFO">POST Response : url=https://automationexercise.com/api/searchProduct 
- status=200, reason=OK 
- headers={'Date': 'Sat, 14 Oct 2023 15:08:20 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'vary': 'Accept,Cookie,Accept-Encoding', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'PUT, DELETE, OPTIONS, POST, GET', 'x-powered-by': 'Phusion Passenger 6.0.7', 'status': '200 OK', 'CF-Cache-Status': 'DYNAMIC', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=PDabZvohNLsVk0ApCTaxFkxJRcq0WsJ4KoXnKrdB1QCAGcTj8UYFmQ5wqbbxFDkavYTCOpX6NUGV%2FlFLDObYK0Igx0DWygl33PKeiZAZgo6KxcQ%2B5gll8cEmY16ilNsgOy8AnQlKq0dE"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '8160bcaccf253fd1-SIN', 'Content-Encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400'} 
- body={"responseCode": 200, "products": [{"id": 1, "name": "Blue Top", "price": "Rs. 500", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 5, "name": "Winter Top", "price": "Rs. 600", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 6, "name": "Summer White Top", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 7, "name": "Madame Top For Women", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 8, "name": "Fancy Green Top", "price": "Rs. 700", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 11, "name": "Sleeves Printed Top - White", "price": "Rs. 499", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 12, "name": "Half Sleeves Top Schiffli Detailing - Pink", "price": "Rs. 359", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 13, "name": "Frozen Tops For Kids", "price": "Rs. 278", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 14, "name": "Full Sleeves Top Cherry - Pink", "price": "Rs. 679", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 15, "name": "Printed Off Shoulder Top - White", "price": "Rs. 315", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 16, "name": "Sleeves Top and Short - Blue &amp; Pink", "price": "Rs. 478", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 18, "name": "Little Girls Mr. Panda Shirt", "price": "Rs. 1200", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 24, "name": "Colour Blocked Shirt \u2013 Sky Blue", "price": "Rs. 849", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 42, "name": "Lace Top For Women", "price": "Rs. 1400", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}]} 
- </msg>
-<msg timestamp="20231014 22:08:20.222" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20231014 22:08:19.009" endtime="20231014 22:08:20.222"/>
+<status status="PASS" start="2025-08-31T11:48:52.207440" elapsed="1.069542"/>
 </kw>
-<kw name="Convert To String" library="BuiltIn">
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2025-08-31T11:48:53.278463" level="INFO">${status_code} = 200</msg>
 <var>${status_code}</var>
 <arg>${response.status_code}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20231014 22:08:20.225" level="INFO">${status_code} = 200</msg>
-<status status="PASS" starttime="20231014 22:08:20.223" endtime="20231014 22:08:20.225"/>
+<status status="PASS" start="2025-08-31T11:48:53.277415" elapsed="0.001097"/>
 </kw>
-<kw name="Should Be Equal" library="BuiltIn">
+<kw name="Should Be Equal" owner="BuiltIn">
 <arg>${status_code}</arg>
 <arg>200</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20231014 22:08:20.225" endtime="20231014 22:08:20.226"/>
+<status status="PASS" start="2025-08-31T11:48:53.278780" elapsed="0.000281"/>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
 <arg>${status_code}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231014 22:08:20.227" endtime="20231014 22:08:20.227"/>
+<status status="PASS" start="2025-08-31T11:48:53.279245" elapsed="0.000208"/>
 </kw>
-<kw name="Get From Dictionary" library="Collections">
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-08-31T11:48:53.280375" level="INFO">${contentTypeValue} = text/html; charset=utf-8</msg>
 <var>${contentTypeValue}</var>
 <arg>${response.headers}</arg>
 <arg>Content-Type</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20231014 22:08:20.230" level="INFO">${contentTypeValue} = text/html; charset=utf-8</msg>
-<status status="PASS" starttime="20231014 22:08:20.228" endtime="20231014 22:08:20.230"/>
+<status status="PASS" start="2025-08-31T11:48:53.279622" elapsed="0.000793"/>
 </kw>
-<kw name="Should Be Equal" library="BuiltIn">
+<kw name="Should Be Equal" owner="BuiltIn">
 <arg>${contentTypeValue}</arg>
 <arg>text/html; charset=utf-8</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20231014 22:08:20.231" endtime="20231014 22:08:20.231"/>
+<status status="PASS" start="2025-08-31T11:48:53.280608" elapsed="0.000164"/>
 </kw>
-<status status="PASS" starttime="20231014 22:08:19.004" endtime="20231014 22:08:20.231"/>
+<status status="PASS" start="2025-08-31T11:48:52.206744" elapsed="1.074184"/>
 </test>
-<test id="s1-t6" name="API 6: POST To Search Product without search_product parameter" line="59">
-<kw name="POST" library="RequestsLibrary">
+<test id="s1-s1-t6" name="API 6: POST To Search Product without search_product parameter" line="59">
+<kw name="POST" owner="RequestsLibrary">
+<msg time="2025-08-31T11:48:54.402301" level="INFO">POST Request : url=https://automationexercise.com/api/searchProduct 
+ path_url=/api/searchProduct 
+ headers={'User-Agent': 'python-requests/2.32.4', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '0'} 
+ body=None 
+ </msg>
+<msg time="2025-08-31T11:48:54.402522" level="INFO">POST Response : url=https://automationexercise.com/api/searchProduct 
+ status=200, reason=OK 
+ headers={'Date': 'Sun, 31 Aug 2025 06:18:54 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'vary': 'Accept,Cookie,Accept-Encoding', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'PUT, GET, OPTIONS, DELETE, POST', 'x-powered-by': 'Phusion Passenger(R) 6.0.23', 'status': '200 OK', 'Report-To': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=ytRrb5T4Z3YpybQ4kjY2j%2FspwdLin%2FXK%2F6mEzyC88Rxy5kgy%2F5PmLdDaySUnxpvNJkIipoT9eUSxaj9FQjR%2BVMq2vDod3jlvPOtjQlpOaOw%2FWs3rfhc%3D"}]}', 'Server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'Nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'Content-Encoding': 'gzip', 'CF-RAY': '977a69c2febf7a80-BOM', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={"responseCode": 400, "message": "Bad request, search_product parameter is missing in POST request."} 
+ </msg>
+<msg time="2025-08-31T11:48:54.402807" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
 <arg>https://automationexercise.com/api/searchProduct</arg>
 <doc>Sends a POST request.</doc>
-<msg timestamp="20231014 22:08:21.245" level="INFO">POST Request : url=https://automationexercise.com/api/searchProduct 
- path_url=/api/searchProduct 
- headers={'User-Agent': 'python-requests/2.25.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '0'} 
- body=None 
- </msg>
-<msg timestamp="20231014 22:08:21.245" level="INFO">POST Response : url=https://automationexercise.com/api/searchProduct 
- status=200, reason=OK 
- headers={'Date': 'Sat, 14 Oct 2023 15:08:21 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'vary': 'Accept,Cookie,Accept-Encoding', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'PUT, DELETE, OPTIONS, POST, GET', 'x-powered-by': 'Phusion Passenger 6.0.7', 'status': '200 OK', 'CF-Cache-Status': 'DYNAMIC', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=MUA88SAuKm7Ktb%2Be2i0evCiUuU3AKAqMW34ZBuTrTuVecxleejEh4XdQ5%2BdmKOnQQFmNxXSlakLHu%2BJ%2Ff5fA8vdPeES%2BaYEfwT7mbDnWRL%2BdiYeyOPpb367ASfjKut4fOobr%2FtXZOpwo"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '8160bcb3be403db1-SIN', 'Content-Encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400'} 
- body={"responseCode": 400, "message": "Bad request, search_product parameter is missing in POST request."} 
- </msg>
-<msg timestamp="20231014 22:08:21.246" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20231014 22:08:20.232" endtime="20231014 22:08:21.246"/>
+<status status="PASS" start="2025-08-31T11:48:53.281590" elapsed="1.121264"/>
 </kw>
-<kw name="Convert To String" library="BuiltIn">
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2025-08-31T11:48:54.404332" level="INFO">${status_code} = 200</msg>
 <var>${status_code}</var>
 <arg>${response.status_code}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20231014 22:08:21.248" level="INFO">${status_code} = 200</msg>
-<status status="PASS" starttime="20231014 22:08:21.246" endtime="20231014 22:08:21.248"/>
+<status status="PASS" start="2025-08-31T11:48:54.403308" elapsed="0.001072"/>
 </kw>
-<kw name="Should Be Equal" library="BuiltIn">
+<kw name="Should Be Equal" owner="BuiltIn">
 <arg>${status_code}</arg>
 <arg>200</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20231014 22:08:21.248" endtime="20231014 22:08:21.249"/>
+<status status="PASS" start="2025-08-31T11:48:54.404647" elapsed="0.000287"/>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
 <arg>${status_code}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231014 22:08:21.249" endtime="20231014 22:08:21.250"/>
+<status status="PASS" start="2025-08-31T11:48:54.405121" elapsed="0.000206"/>
 </kw>
-<kw name="Convert To String" library="BuiltIn">
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2025-08-31T11:48:54.406216" level="INFO">${body} = {"responseCode": 400, "message": "Bad request, search_product parameter is missing in POST request."}</msg>
 <var>${body}</var>
 <arg>${response.content}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20231014 22:08:21.252" level="INFO">${body} = {"responseCode": 400, "message": "Bad request, search_product parameter is missing in POST request."}</msg>
-<status status="PASS" starttime="20231014 22:08:21.250" endtime="20231014 22:08:21.252"/>
+<status status="PASS" start="2025-08-31T11:48:54.405482" elapsed="0.000775"/>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
 <arg>${body}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231014 22:08:21.253" endtime="20231014 22:08:21.254"/>
+<status status="PASS" start="2025-08-31T11:48:54.406436" elapsed="0.000193"/>
 </kw>
-<kw name="Should Contain" library="BuiltIn">
+<kw name="Should Contain" owner="BuiltIn">
 <arg>${body}</arg>
 <arg>"responseCode": 400</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" starttime="20231014 22:08:21.254" endtime="20231014 22:08:21.254"/>
+<status status="PASS" start="2025-08-31T11:48:54.406741" elapsed="0.000109"/>
 </kw>
-<kw name="Should Contain" library="BuiltIn">
+<kw name="Should Contain" owner="BuiltIn">
 <arg>${body}</arg>
 <arg>"message": "Bad request, search_product parameter is missing in POST request."</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" starttime="20231014 22:08:21.254" endtime="20231014 22:08:21.255"/>
+<status status="PASS" start="2025-08-31T11:48:54.406944" elapsed="0.000113"/>
 </kw>
-<kw name="Get From Dictionary" library="Collections">
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-08-31T11:48:54.407562" level="INFO">${contentTypeValue} = text/html; charset=utf-8</msg>
 <var>${contentTypeValue}</var>
 <arg>${response.headers}</arg>
 <arg>Content-Type</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20231014 22:08:21.255" level="INFO">${contentTypeValue} = text/html; charset=utf-8</msg>
-<status status="PASS" starttime="20231014 22:08:21.255" endtime="20231014 22:08:21.256"/>
+<status status="PASS" start="2025-08-31T11:48:54.407163" elapsed="0.000421"/>
 </kw>
-<kw name="Should Be Equal" library="BuiltIn">
+<kw name="Should Be Equal" owner="BuiltIn">
 <arg>${contentTypeValue}</arg>
 <arg>text/html; charset=utf-8</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20231014 22:08:21.256" endtime="20231014 22:08:21.256"/>
+<status status="PASS" start="2025-08-31T11:48:54.407731" elapsed="0.000137"/>
 </kw>
-<status status="PASS" starttime="20231014 22:08:20.231" endtime="20231014 22:08:21.256"/>
+<status status="PASS" start="2025-08-31T11:48:53.281154" elapsed="1.126845"/>
 </test>
-<test id="s1-t7" name="API 7: POST To Verify Login with valid details" line="73">
-<kw name="Create Dictionary" library="BuiltIn">
+<test id="s1-s1-t7" name="API 7: POST To Verify Login with valid details" line="73">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-08-31T11:48:54.408993" level="INFO">${body} = {'email': 'testingAT@yopmail.com', 'password': 'testingAT'}</msg>
 <var>${body}</var>
 <arg>email=testingAT@yopmail.com</arg>
 <arg>password=testingAT</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20231014 22:08:21.257" level="INFO">${body} = {'email': 'testingAT@yopmail.com', 'password': 'testingAT'}</msg>
-<status status="PASS" starttime="20231014 22:08:21.257" endtime="20231014 22:08:21.257"/>
+<status status="PASS" start="2025-08-31T11:48:54.408740" elapsed="0.000283"/>
 </kw>
-<kw name="POST" library="RequestsLibrary">
+<kw name="POST" owner="RequestsLibrary">
+<msg time="2025-08-31T11:48:55.449523" level="INFO">POST Request : url=https://automationexercise.com/api/verifyLogin 
+ path_url=/api/verifyLogin 
+ headers={'User-Agent': 'python-requests/2.32.4', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '48', 'Content-Type': 'application/x-www-form-urlencoded'} 
+ body=email=testingAT%40yopmail.com&amp;password=testingAT 
+ </msg>
+<msg time="2025-08-31T11:48:55.449751" level="INFO">POST Response : url=https://automationexercise.com/api/verifyLogin 
+ status=200, reason=OK 
+ headers={'Date': 'Sun, 31 Aug 2025 06:18:55 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'vary': 'Accept,Cookie,Accept-Encoding', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'PUT, GET, OPTIONS, DELETE, POST', 'x-powered-by': 'Phusion Passenger(R) 6.0.23', 'status': '200 OK', 'Report-To': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=2WAp9SvujYncZ3gtVtHWRZ33mWbS2r%2B8CYaeOIL6mRTR38uuUgLucmfSsycJjgNdzHmIiNIO%2FgGmN9nVq4w3GHOLtfE4ja1yhQtT%2BPNoB5uRvtO0oe4%3D"}]}', 'Server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'Nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'Content-Encoding': 'gzip', 'CF-RAY': '977a69ca08ab3de0-BOM', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={"responseCode": 200, "message": "User exists!"} 
+ </msg>
+<msg time="2025-08-31T11:48:55.450205" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
 <arg>https://automationexercise.com/api/verifyLogin</arg>
 <arg>data=${body}</arg>
 <doc>Sends a POST request.</doc>
-<msg timestamp="20231014 22:08:22.372" level="INFO">POST Request : url=https://automationexercise.com/api/verifyLogin 
- path_url=/api/verifyLogin 
- headers={'User-Agent': 'python-requests/2.25.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '48', 'Content-Type': 'application/x-www-form-urlencoded'} 
- body=email=testingAT%40yopmail.com&amp;password=testingAT 
- </msg>
-<msg timestamp="20231014 22:08:22.373" level="INFO">POST Response : url=https://automationexercise.com/api/verifyLogin 
- status=200, reason=OK 
- headers={'Date': 'Sat, 14 Oct 2023 15:08:22 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'vary': 'Accept,Cookie,Accept-Encoding', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'PUT, DELETE, OPTIONS, POST, GET', 'x-powered-by': 'Phusion Passenger 6.0.7', 'status': '200 OK', 'CF-Cache-Status': 'DYNAMIC', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=P4vS%2BUDU3jwvS%2BoRq7%2F3TfLDmr6M77hHTFnCXPt04P7v8wtsMPh5SMp%2FrNhMp5pNOFmOH3bTVhxQHOiRn88n1uxEwtPL7xfbZYLCbIs3JxzB8NVGxKcbspZCJy5YFXwPz34ZplqKlV%2FK"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '8160bcbadf286003-SIN', 'Content-Encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400'} 
- body={"responseCode": 200, "message": "User exists!"} 
- </msg>
-<msg timestamp="20231014 22:08:22.373" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20231014 22:08:21.258" endtime="20231014 22:08:22.373"/>
+<status status="PASS" start="2025-08-31T11:48:54.409156" elapsed="1.041097"/>
 </kw>
-<kw name="Convert To String" library="BuiltIn">
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2025-08-31T11:48:55.451248" level="INFO">${status_code} = 200</msg>
 <var>${status_code}</var>
 <arg>${response.status_code}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20231014 22:08:22.375" level="INFO">${status_code} = 200</msg>
-<status status="PASS" starttime="20231014 22:08:22.374" endtime="20231014 22:08:22.375"/>
+<status status="PASS" start="2025-08-31T11:48:55.450611" elapsed="0.000660"/>
 </kw>
-<kw name="Should Be Equal" library="BuiltIn">
+<kw name="Should Be Equal" owner="BuiltIn">
 <arg>${status_code}</arg>
 <arg>200</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20231014 22:08:22.375" endtime="20231014 22:08:22.376"/>
+<status status="PASS" start="2025-08-31T11:48:55.451417" elapsed="0.000151"/>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
 <arg>${status_code}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231014 22:08:22.377" endtime="20231014 22:08:22.377"/>
+<status status="PASS" start="2025-08-31T11:48:55.451665" elapsed="0.000110"/>
 </kw>
-<kw name="Get From Dictionary" library="Collections">
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-08-31T11:48:55.452261" level="INFO">${contentTypeValue} = text/html; charset=utf-8</msg>
 <var>${contentTypeValue}</var>
 <arg>${response.headers}</arg>
 <arg>Content-Type</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20231014 22:08:22.381" level="INFO">${contentTypeValue} = text/html; charset=utf-8</msg>
-<status status="PASS" starttime="20231014 22:08:22.378" endtime="20231014 22:08:22.381"/>
+<status status="PASS" start="2025-08-31T11:48:55.451860" elapsed="0.000424"/>
 </kw>
-<kw name="Should Be Equal" library="BuiltIn">
+<kw name="Should Be Equal" owner="BuiltIn">
 <arg>${contentTypeValue}</arg>
 <arg>text/html; charset=utf-8</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20231014 22:08:22.382" endtime="20231014 22:08:22.383"/>
+<status status="PASS" start="2025-08-31T11:48:55.452407" elapsed="0.000134"/>
 </kw>
-<status status="PASS" starttime="20231014 22:08:21.257" endtime="20231014 22:08:22.384"/>
+<status status="PASS" start="2025-08-31T11:48:54.408189" elapsed="1.044490"/>
 </test>
-<test id="s1-t8" name="API 8: POST To Verify Login without email parameter" line="84">
-<kw name="Create Dictionary" library="BuiltIn">
+<test id="s1-s1-t8" name="API 8: POST To Verify Login without email parameter" line="84">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-08-31T11:48:55.453414" level="INFO">${body} = {'password': 'testing'}</msg>
 <var>${body}</var>
 <arg>password=testing</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20231014 22:08:22.386" level="INFO">${body} = {'password': 'testing'}</msg>
-<status status="PASS" starttime="20231014 22:08:22.385" endtime="20231014 22:08:22.386"/>
+<status status="PASS" start="2025-08-31T11:48:55.453232" elapsed="0.000202"/>
 </kw>
-<kw name="POST" library="RequestsLibrary">
+<kw name="POST" owner="RequestsLibrary">
+<msg time="2025-08-31T11:48:56.500607" level="INFO">POST Request : url=https://automationexercise.com/api/verifyLogin 
+ path_url=/api/verifyLogin 
+ headers={'User-Agent': 'python-requests/2.32.4', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '16', 'Content-Type': 'application/x-www-form-urlencoded'} 
+ body=password=testing 
+ </msg>
+<msg time="2025-08-31T11:48:56.500832" level="INFO">POST Response : url=https://automationexercise.com/api/verifyLogin 
+ status=200, reason=OK 
+ headers={'Date': 'Sun, 31 Aug 2025 06:18:56 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'vary': 'Accept,Cookie,Accept-Encoding', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'PUT, GET, OPTIONS, DELETE, POST', 'x-powered-by': 'Phusion Passenger(R) 6.0.23', 'status': '200 OK', 'Report-To': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=hDoeHrdHhJN0xyomU7j4EEnLGYFL%2Bl6BthHelsmnLvOYLLevYFmILjp%2BA5RJ%2BJtGyDOt2UM%2FhQzrSlOHgab8RRyGx%2B%2FnRIIdwVp2haLfg7AoXDxJcyM%3D"}]}', 'Server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'Nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'Content-Encoding': 'gzip', 'CF-RAY': '977a69d09a19444e-BOM', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={"responseCode": 400, "message": "Bad request, email or password parameter is missing in POST request."} 
+ </msg>
+<msg time="2025-08-31T11:48:56.501136" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
 <arg>https://automationexercise.com/api/verifyLogin</arg>
 <arg>data=${body}</arg>
 <doc>Sends a POST request.</doc>
-<msg timestamp="20231014 22:08:23.498" level="INFO">POST Request : url=https://automationexercise.com/api/verifyLogin 
- path_url=/api/verifyLogin 
- headers={'User-Agent': 'python-requests/2.25.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '16', 'Content-Type': 'application/x-www-form-urlencoded'} 
- body=password=testing 
- </msg>
-<msg timestamp="20231014 22:08:23.499" level="INFO">POST Response : url=https://automationexercise.com/api/verifyLogin 
- status=200, reason=OK 
- headers={'Date': 'Sat, 14 Oct 2023 15:08:23 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'vary': 'Accept,Cookie,Accept-Encoding', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'PUT, DELETE, OPTIONS, POST, GET', 'x-powered-by': 'Phusion Passenger 6.0.7', 'status': '200 OK', 'CF-Cache-Status': 'DYNAMIC', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=CyVO9lMMtnpnhajK3s1WxcuCZEYbpf%2FnEbD%2B%2BTna0qgd5JxcPL246fqh%2FUYz3fWVjjOGIAOy%2FN3Oeme%2Bh1OvRZ6zATfs%2FlBgKxHn0SjkukgaIiRJae1aoGaevK8t5Wbrfdh96IpkCdAk"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '8160bcc1dc134bfe-SIN', 'Content-Encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400'} 
- body={"responseCode": 400, "message": "Bad request, email or password parameter is missing in POST request."} 
- </msg>
-<msg timestamp="20231014 22:08:23.499" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20231014 22:08:22.386" endtime="20231014 22:08:23.499"/>
+<status status="PASS" start="2025-08-31T11:48:55.453529" elapsed="1.047653"/>
 </kw>
-<kw name="Convert To String" library="BuiltIn">
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2025-08-31T11:48:56.502276" level="INFO">${status_code} = 200</msg>
 <var>${status_code}</var>
 <arg>${response.status_code}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20231014 22:08:23.502" level="INFO">${status_code} = 200</msg>
-<status status="PASS" starttime="20231014 22:08:23.500" endtime="20231014 22:08:23.502"/>
+<status status="PASS" start="2025-08-31T11:48:56.501555" elapsed="0.000753"/>
 </kw>
-<kw name="Should Be Equal" library="BuiltIn">
+<kw name="Should Be Equal" owner="BuiltIn">
 <arg>${status_code}</arg>
 <arg>200</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20231014 22:08:23.503" endtime="20231014 22:08:23.503"/>
+<status status="PASS" start="2025-08-31T11:48:56.502481" elapsed="0.000175"/>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
 <arg>${status_code}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231014 22:08:23.504" endtime="20231014 22:08:23.505"/>
+<status status="PASS" start="2025-08-31T11:48:56.502769" elapsed="0.000122"/>
 </kw>
-<kw name="Convert To String" library="BuiltIn">
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2025-08-31T11:48:56.503414" level="INFO">${body} = {"responseCode": 400, "message": "Bad request, email or password parameter is missing in POST request."}</msg>
 <var>${body}</var>
 <arg>${response.content}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20231014 22:08:23.506" level="INFO">${body} = {"responseCode": 400, "message": "Bad request, email or password parameter is missing in POST request."}</msg>
-<status status="PASS" starttime="20231014 22:08:23.505" endtime="20231014 22:08:23.506"/>
+<status status="PASS" start="2025-08-31T11:48:56.502986" elapsed="0.000447"/>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
 <arg>${body}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231014 22:08:23.506" endtime="20231014 22:08:23.506"/>
+<status status="PASS" start="2025-08-31T11:48:56.503521" elapsed="0.000095"/>
 </kw>
-<kw name="Should Contain" library="BuiltIn">
+<kw name="Should Contain" owner="BuiltIn">
 <arg>${body}</arg>
 <arg>"responseCode": 400</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" starttime="20231014 22:08:23.507" endtime="20231014 22:08:23.507"/>
+<status status="PASS" start="2025-08-31T11:48:56.503705" elapsed="0.000095"/>
 </kw>
-<kw name="Should Contain" library="BuiltIn">
+<kw name="Should Contain" owner="BuiltIn">
 <arg>${body}</arg>
 <arg>"message": "Bad request, email or password parameter is missing in POST request."</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" starttime="20231014 22:08:23.507" endtime="20231014 22:08:23.507"/>
+<status status="PASS" start="2025-08-31T11:48:56.503880" elapsed="0.000083"/>
 </kw>
-<kw name="Get From Dictionary" library="Collections">
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-08-31T11:48:56.504426" level="INFO">${contentTypeValue} = text/html; charset=utf-8</msg>
 <var>${contentTypeValue}</var>
 <arg>${response.headers}</arg>
 <arg>Content-Type</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20231014 22:08:23.508" level="INFO">${contentTypeValue} = text/html; charset=utf-8</msg>
-<status status="PASS" starttime="20231014 22:08:23.507" endtime="20231014 22:08:23.508"/>
+<status status="PASS" start="2025-08-31T11:48:56.504081" elapsed="0.000364"/>
 </kw>
-<kw name="Should Be Equal" library="BuiltIn">
+<kw name="Should Be Equal" owner="BuiltIn">
 <arg>${contentTypeValue}</arg>
 <arg>text/html; charset=utf-8</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20231014 22:08:23.509" endtime="20231014 22:08:23.509"/>
+<status status="PASS" start="2025-08-31T11:48:56.504537" elapsed="0.000120"/>
 </kw>
-<status status="PASS" starttime="20231014 22:08:22.385" endtime="20231014 22:08:23.509"/>
+<status status="PASS" start="2025-08-31T11:48:55.452863" elapsed="1.051931"/>
 </test>
-<test id="s1-t9" name="API 9: DELETE To Verify Login" line="99">
-<kw name="DELETE" library="RequestsLibrary">
+<test id="s1-s1-t9" name="API 9: DELETE To Verify Login" line="99">
+<kw name="DELETE" owner="RequestsLibrary">
+<msg time="2025-08-31T11:48:57.539688" level="INFO">DELETE Request : url=https://automationexercise.com/api/verifyLogin 
+ path_url=/api/verifyLogin 
+ headers={'User-Agent': 'python-requests/2.32.4', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '0'} 
+ body=None 
+ </msg>
+<msg time="2025-08-31T11:48:57.539917" level="INFO">DELETE Response : url=https://automationexercise.com/api/verifyLogin 
+ status=200, reason=OK 
+ headers={'Date': 'Sun, 31 Aug 2025 06:18:57 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'vary': 'Accept,Cookie,Accept-Encoding', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'PUT, GET, OPTIONS, DELETE, POST', 'x-powered-by': 'Phusion Passenger(R) 6.0.23', 'status': '200 OK', 'Report-To': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=wcLhMUt9%2BqwJ6YFnvhBm2Fz7xqKLsbH3IaQ%2BaNhmztAGhnMxzcHHgBWR730y4DBIaDDrpLexbljTlr%2FWO%2B0Oj%2FcjYWuhfcePbvcwVQ0v4WK%2FcBSMZtw%3D"}]}', 'Server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'Nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'Content-Encoding': 'gzip', 'CF-RAY': '977a69d729903df7-BOM', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={"responseCode": 405, "message": "This request method is not supported."} 
+ </msg>
+<msg time="2025-08-31T11:48:57.540788" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
 <arg>https://automationexercise.com/api/verifyLogin</arg>
 <doc>Sends a DELETE request.</doc>
-<msg timestamp="20231014 22:08:24.624" level="INFO">DELETE Request : url=https://automationexercise.com/api/verifyLogin 
- path_url=/api/verifyLogin 
- headers={'User-Agent': 'python-requests/2.25.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '0'} 
- body=None 
- </msg>
-<msg timestamp="20231014 22:08:24.625" level="INFO">DELETE Response : url=https://automationexercise.com/api/verifyLogin 
- status=200, reason=OK 
- headers={'Date': 'Sat, 14 Oct 2023 15:08:24 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'vary': 'Accept,Cookie,Accept-Encoding', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'PUT, DELETE, OPTIONS, POST, GET', 'x-powered-by': 'Phusion Passenger 6.0.7', 'status': '200 OK', 'CF-Cache-Status': 'DYNAMIC', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=yeVvPHlw%2Fgs40fhknDAY66t%2FdXi6udFNfjGhZNzBNDYbhXlDwmaNPiWzzMJ801YC3UHk%2FjrmMM77EWSGUgVk0bhCBH7XHk%2FkLubxbW6rJth6mUDWZ1WbU3LzhqPcRBnlE45jjO%2FDt8%2BQ"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '8160bcc8eaa34110-SIN', 'Content-Encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400'} 
- body={"responseCode": 405, "message": "This request method is not supported."} 
- </msg>
-<msg timestamp="20231014 22:08:24.625" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20231014 22:08:23.510" endtime="20231014 22:08:24.625"/>
+<status status="PASS" start="2025-08-31T11:48:56.505342" elapsed="1.035502"/>
 </kw>
-<kw name="Convert To String" library="BuiltIn">
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2025-08-31T11:48:57.542279" level="INFO">${status_code} = 200</msg>
 <var>${status_code}</var>
 <arg>${response.status_code}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20231014 22:08:24.627" level="INFO">${status_code} = 200</msg>
-<status status="PASS" starttime="20231014 22:08:24.626" endtime="20231014 22:08:24.627"/>
+<status status="PASS" start="2025-08-31T11:48:57.541261" elapsed="0.001066"/>
 </kw>
-<kw name="Should Be Equal" library="BuiltIn">
+<kw name="Should Be Equal" owner="BuiltIn">
 <arg>${status_code}</arg>
 <arg>200</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20231014 22:08:24.628" endtime="20231014 22:08:24.628"/>
+<status status="PASS" start="2025-08-31T11:48:57.542597" elapsed="0.000279"/>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
 <arg>${status_code}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231014 22:08:24.629" endtime="20231014 22:08:24.631"/>
+<status status="PASS" start="2025-08-31T11:48:57.543012" elapsed="0.000127"/>
 </kw>
-<kw name="Convert To String" library="BuiltIn">
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2025-08-31T11:48:57.543728" level="INFO">${body} = {"responseCode": 405, "message": "This request method is not supported."}</msg>
 <var>${body}</var>
 <arg>${response.content}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20231014 22:08:24.632" level="INFO">${body} = {"responseCode": 405, "message": "This request method is not supported."}</msg>
-<status status="PASS" starttime="20231014 22:08:24.631" endtime="20231014 22:08:24.632"/>
+<status status="PASS" start="2025-08-31T11:48:57.543235" elapsed="0.000517"/>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
 <arg>${body}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231014 22:08:24.632" endtime="20231014 22:08:24.632"/>
+<status status="PASS" start="2025-08-31T11:48:57.543860" elapsed="0.000109"/>
 </kw>
-<kw name="Should Contain" library="BuiltIn">
+<kw name="Should Contain" owner="BuiltIn">
 <arg>${body}</arg>
 <arg>"responseCode": 405</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" starttime="20231014 22:08:24.633" endtime="20231014 22:08:24.633"/>
+<status status="PASS" start="2025-08-31T11:48:57.544070" elapsed="0.000110"/>
 </kw>
-<kw name="Should Contain" library="BuiltIn">
+<kw name="Should Contain" owner="BuiltIn">
 <arg>${body}</arg>
 <arg>"message": "This request method is not supported."</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" starttime="20231014 22:08:24.633" endtime="20231014 22:08:24.633"/>
+<status status="PASS" start="2025-08-31T11:48:57.544273" elapsed="0.000098"/>
 </kw>
-<kw name="Get From Dictionary" library="Collections">
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-08-31T11:48:57.544883" level="INFO">${contentTypeValue} = text/html; charset=utf-8</msg>
 <var>${contentTypeValue}</var>
 <arg>${response.headers}</arg>
 <arg>Content-Type</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20231014 22:08:24.634" level="INFO">${contentTypeValue} = text/html; charset=utf-8</msg>
-<status status="PASS" starttime="20231014 22:08:24.633" endtime="20231014 22:08:24.634"/>
+<status status="PASS" start="2025-08-31T11:48:57.544472" elapsed="0.000432"/>
 </kw>
-<kw name="Should Be Equal" library="BuiltIn">
+<kw name="Should Be Equal" owner="BuiltIn">
 <arg>${contentTypeValue}</arg>
 <arg>text/html; charset=utf-8</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20231014 22:08:24.636" endtime="20231014 22:08:24.636"/>
+<status status="PASS" start="2025-08-31T11:48:57.545017" elapsed="0.000131"/>
 </kw>
-<status status="PASS" starttime="20231014 22:08:23.509" endtime="20231014 22:08:24.637"/>
+<status status="PASS" start="2025-08-31T11:48:56.504986" elapsed="1.040292"/>
 </test>
-<test id="s1-t10" name="API 10: POST To Verify Login with invalid details" line="113">
-<kw name="Create Dictionary" library="BuiltIn">
+<test id="s1-s1-t10" name="API 10: POST To Verify Login with invalid details" line="113">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-08-31T11:48:57.546049" level="INFO">${body} = {'email': 'testingATZ@yopmail.com', 'password': 'testingATZ'}</msg>
 <var>${body}</var>
 <arg>email=testingATZ@yopmail.com</arg>
 <arg>password=testingATZ</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20231014 22:08:24.638" level="INFO">${body} = {'email': 'testingATZ@yopmail.com', 'password': 'testingATZ'}</msg>
-<status status="PASS" starttime="20231014 22:08:24.637" endtime="20231014 22:08:24.638"/>
+<status status="PASS" start="2025-08-31T11:48:57.545863" elapsed="0.000205"/>
 </kw>
-<kw name="POST" library="RequestsLibrary">
+<kw name="POST" owner="RequestsLibrary">
+<msg time="2025-08-31T11:48:58.709052" level="INFO">POST Request : url=https://automationexercise.com/api/verifyLogin 
+ path_url=/api/verifyLogin 
+ headers={'User-Agent': 'python-requests/2.32.4', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '50', 'Content-Type': 'application/x-www-form-urlencoded'} 
+ body=email=testingATZ%40yopmail.com&amp;password=testingATZ 
+ </msg>
+<msg time="2025-08-31T11:48:58.709271" level="INFO">POST Response : url=https://automationexercise.com/api/verifyLogin 
+ status=200, reason=OK 
+ headers={'Date': 'Sun, 31 Aug 2025 06:18:58 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'vary': 'Accept,Cookie,Accept-Encoding', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'PUT, GET, OPTIONS, DELETE, POST', 'x-powered-by': 'Phusion Passenger(R) 6.0.23', 'status': '200 OK', 'Report-To': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=lV5WioEe29TnlbnESCIYM6ZBg5QV4Y5QRPUnk4yVyyLKIk1XIUCA6e8sBmX0jSW8UyaUdusNTXxzWnufeJTREkjiad1%2BuWd0ZIJfIJWY%2BNM4785M"}]}', 'Server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'Nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'Content-Encoding': 'gzip', 'CF-RAY': '977a69ddaf4e3227-BOM', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={"responseCode": 404, "message": "User not found!"} 
+ </msg>
+<msg time="2025-08-31T11:48:58.709570" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
 <arg>https://automationexercise.com/api/verifyLogin</arg>
 <arg>data=${body}</arg>
 <doc>Sends a POST request.</doc>
-<msg timestamp="20231014 22:08:25.853" level="INFO">POST Request : url=https://automationexercise.com/api/verifyLogin 
- path_url=/api/verifyLogin 
- headers={'User-Agent': 'python-requests/2.25.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '50', 'Content-Type': 'application/x-www-form-urlencoded'} 
- body=email=testingATZ%40yopmail.com&amp;password=testingATZ 
- </msg>
-<msg timestamp="20231014 22:08:25.855" level="INFO">POST Response : url=https://automationexercise.com/api/verifyLogin 
- status=200, reason=OK 
- headers={'Date': 'Sat, 14 Oct 2023 15:08:25 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'vary': 'Accept,Cookie,Accept-Encoding', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'PUT, DELETE, OPTIONS, POST, GET', 'x-powered-by': 'Phusion Passenger 6.0.7', 'status': '200 OK', 'CF-Cache-Status': 'DYNAMIC', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=ez9OeuLJjqjqHFahIri%2BLNqA96iXF%2BJYmvZXsZR4VA0fQtos1tXd%2BzDtbmuWksd%2F2SyiXRTRrTbib44APth9tdPKWFvKKl53OlpFrDdUG1y%2FKoI89i8YqDKx57wfTvzu7Qc8Noo5pczJ"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '8160bccffa893e18-SIN', 'Content-Encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400'} 
- body={"responseCode": 404, "message": "User not found!"} 
- </msg>
-<msg timestamp="20231014 22:08:25.856" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20231014 22:08:24.638" endtime="20231014 22:08:25.856"/>
+<status status="PASS" start="2025-08-31T11:48:57.546159" elapsed="1.163461"/>
 </kw>
-<kw name="Convert To String" library="BuiltIn">
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2025-08-31T11:48:58.711156" level="INFO">${status_code} = 200</msg>
 <var>${status_code}</var>
 <arg>${response.status_code}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20231014 22:08:25.858" level="INFO">${status_code} = 200</msg>
-<status status="PASS" starttime="20231014 22:08:25.856" endtime="20231014 22:08:25.858"/>
+<status status="PASS" start="2025-08-31T11:48:58.710077" elapsed="0.001124"/>
 </kw>
-<kw name="Should Be Equal" library="BuiltIn">
+<kw name="Should Be Equal" owner="BuiltIn">
 <arg>${status_code}</arg>
 <arg>200</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20231014 22:08:25.859" endtime="20231014 22:08:25.860"/>
+<status status="PASS" start="2025-08-31T11:48:58.711438" elapsed="0.000193"/>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
 <arg>${status_code}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231014 22:08:25.860" endtime="20231014 22:08:25.861"/>
+<status status="PASS" start="2025-08-31T11:48:58.711749" elapsed="0.000130"/>
 </kw>
-<kw name="Convert To String" library="BuiltIn">
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2025-08-31T11:48:58.712450" level="INFO">${body} = {"responseCode": 404, "message": "User not found!"}</msg>
 <var>${body}</var>
 <arg>${response.content}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20231014 22:08:25.863" level="INFO">${body} = {"responseCode": 404, "message": "User not found!"}</msg>
-<status status="PASS" starttime="20231014 22:08:25.861" endtime="20231014 22:08:25.863"/>
+<status status="PASS" start="2025-08-31T11:48:58.711976" elapsed="0.000499"/>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
 <arg>${body}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231014 22:08:25.863" endtime="20231014 22:08:25.864"/>
+<status status="PASS" start="2025-08-31T11:48:58.712586" elapsed="0.000115"/>
 </kw>
-<kw name="Should Contain" library="BuiltIn">
+<kw name="Should Contain" owner="BuiltIn">
 <arg>${body}</arg>
 <arg>"responseCode": 404</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" starttime="20231014 22:08:25.864" endtime="20231014 22:08:25.865"/>
+<status status="PASS" start="2025-08-31T11:48:58.712800" elapsed="0.000130"/>
 </kw>
-<kw name="Should Contain" library="BuiltIn">
+<kw name="Should Contain" owner="BuiltIn">
 <arg>${body}</arg>
 <arg>"message": "User not found!"</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" starttime="20231014 22:08:25.865" endtime="20231014 22:08:25.865"/>
+<status status="PASS" start="2025-08-31T11:48:58.713030" elapsed="0.000101"/>
 </kw>
-<kw name="Get From Dictionary" library="Collections">
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-08-31T11:48:58.713655" level="INFO">${contentTypeValue} = text/html; charset=utf-8</msg>
 <var>${contentTypeValue}</var>
 <arg>${response.headers}</arg>
 <arg>Content-Type</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20231014 22:08:25.866" level="INFO">${contentTypeValue} = text/html; charset=utf-8</msg>
-<status status="PASS" starttime="20231014 22:08:25.865" endtime="20231014 22:08:25.866"/>
+<status status="PASS" start="2025-08-31T11:48:58.713261" elapsed="0.000415"/>
 </kw>
-<kw name="Should Be Equal" library="BuiltIn">
+<kw name="Should Be Equal" owner="BuiltIn">
 <arg>${contentTypeValue}</arg>
 <arg>text/html; charset=utf-8</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20231014 22:08:25.866" endtime="20231014 22:08:25.867"/>
+<status status="PASS" start="2025-08-31T11:48:58.713782" elapsed="0.000121"/>
 </kw>
-<status status="PASS" starttime="20231014 22:08:24.637" endtime="20231014 22:08:25.867"/>
+<status status="PASS" start="2025-08-31T11:48:57.545466" elapsed="1.168561"/>
 </test>
-<test id="s1-t11" name="API 11: POST To Create/Register User Account" line="128">
-<kw name="Create Dictionary" library="BuiltIn">
+<test id="s1-s1-t11" name="API 11: POST To Create/Register User Account" line="128">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-08-31T11:48:58.714899" level="INFO">${body} = {'name': 'TestingQA', 'email': 'testingAT2@yopmail.com', 'password': 'testingAT2', 'title': 'MR.Adit', 'birth_date': '27', 'birth_month': '05', 'birth_year': '1996', 'firstname': 'Testing', 'lastname'...</msg>
 <var>${body}</var>
 <arg>name=TestingQA</arg>
 <arg>email=testingAT2@yopmail.com</arg>
@@ -684,86 +686,87 @@
 <arg>city=tesst</arg>
 <arg>mobile_number=0812321312</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20231014 22:08:25.868" level="INFO">${body} = {'name': 'TestingQA', 'email': 'testingAT2@yopmail.com', 'password': 'testingAT2', 'title': 'MR.Adit', 'birth_date': '27', 'birth_month': '05', 'birth_year': '1996', 'firstname': 'Testing', 'lastname'...</msg>
-<status status="PASS" starttime="20231014 22:08:25.868" endtime="20231014 22:08:25.868"/>
+<status status="PASS" start="2025-08-31T11:48:58.714602" elapsed="0.000467"/>
 </kw>
-<kw name="POST" library="RequestsLibrary">
+<kw name="POST" owner="RequestsLibrary">
+<msg time="2025-08-31T11:48:59.829789" level="INFO">POST Request : url=https://automationexercise.com/api/createAccount 
+ path_url=/api/createAccount 
+ headers={'User-Agent': 'python-requests/2.32.4', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '285', 'Content-Type': 'application/x-www-form-urlencoded'} 
+ body=name=TestingQA&amp;email=testingAT2%40yopmail.com&amp;password=testingAT2&amp;title=MR.Adit&amp;birth_date=27&amp;birth_month=05&amp;birth_year=1996&amp;firstname=Testing&amp;lastname=QA&amp;company=testing&amp;address1=testing&amp;address2=testingdulu&amp;country=testing&amp;zipcode=13213&amp;state=test&amp;city=tesst&amp;mobile_number=0812321312 
+ </msg>
+<msg time="2025-08-31T11:48:59.830067" level="INFO">POST Response : url=https://automationexercise.com/api/createAccount 
+ status=200, reason=OK 
+ headers={'Date': 'Sun, 31 Aug 2025 06:18:59 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'vary': 'Accept,Cookie,Accept-Encoding', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'OPTIONS, POST', 'x-powered-by': 'Phusion Passenger(R) 6.0.23', 'status': '200 OK', 'Report-To': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=An13%2FNYYzq1QCDrPajkg1LnFTQBofQuR%2B8UHHOMTEFdrjPWJzetDuQrxpmdXYe9el1IzqI6LQLTt%2BIJ99xGAe13lopw1V%2BrBxgEauQK30HNf8sccaSA%3D"}]}', 'Server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'Nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'Content-Encoding': 'gzip', 'CF-RAY': '977a69e50e26b081-BOM', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={"responseCode": 400, "message": "Email already exists!"} 
+ </msg>
+<msg time="2025-08-31T11:48:59.830406" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
 <arg>https://automationexercise.com/api/createAccount</arg>
 <arg>data=${body}</arg>
 <doc>Sends a POST request.</doc>
-<msg timestamp="20231014 22:08:27.081" level="INFO">POST Request : url=https://automationexercise.com/api/createAccount 
- path_url=/api/createAccount 
- headers={'User-Agent': 'python-requests/2.25.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '285', 'Content-Type': 'application/x-www-form-urlencoded'} 
- body=name=TestingQA&amp;email=testingAT2%40yopmail.com&amp;password=testingAT2&amp;title=MR.Adit&amp;birth_date=27&amp;birth_month=05&amp;birth_year=1996&amp;firstname=Testing&amp;lastname=QA&amp;company=testing&amp;address1=testing&amp;address2=testingdulu&amp;country=testing&amp;zipcode=13213&amp;state=test&amp;city=tesst&amp;mobile_number=0812321312 
- </msg>
-<msg timestamp="20231014 22:08:27.082" level="INFO">POST Response : url=https://automationexercise.com/api/createAccount 
- status=200, reason=OK 
- headers={'Date': 'Sat, 14 Oct 2023 15:08:27 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'vary': 'Accept,Cookie,Accept-Encoding', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'POST, OPTIONS', 'x-powered-by': 'Phusion Passenger 6.0.7', 'status': '200 OK', 'CF-Cache-Status': 'DYNAMIC', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=F%2BF0Lbi7Z%2FcGRYDLTxZK8hFjQnCOz1ZERmZiuEBr8DxpZ4vBDAvTKiBUUg3gEhh3%2BZrh2rROxGI8CxSg3UamCAHo4BSz7Q6lbzJslvFJLgAuBXOllRUM3VpbUH3Knb0QHHYiujerodp%2B"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '8160bcd84bcf44ba-SIN', 'Content-Encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400'} 
- body={"responseCode": 400, "message": "Email already exists!"} 
- </msg>
-<msg timestamp="20231014 22:08:27.083" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20231014 22:08:25.868" endtime="20231014 22:08:27.083"/>
+<status status="PASS" start="2025-08-31T11:48:58.715216" elapsed="1.115249"/>
 </kw>
-<kw name="Convert To String" library="BuiltIn">
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2025-08-31T11:48:59.832008" level="INFO">${status_code} = 200</msg>
 <var>${status_code}</var>
 <arg>${response.status_code}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20231014 22:08:27.085" level="INFO">${status_code} = 200</msg>
-<status status="PASS" starttime="20231014 22:08:27.083" endtime="20231014 22:08:27.085"/>
+<status status="PASS" start="2025-08-31T11:48:59.830929" elapsed="0.001130"/>
 </kw>
-<kw name="Should Be Equal" library="BuiltIn">
+<kw name="Should Be Equal" owner="BuiltIn">
 <arg>${status_code}</arg>
 <arg>200</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20231014 22:08:27.086" endtime="20231014 22:08:27.086"/>
+<status status="PASS" start="2025-08-31T11:48:59.832302" elapsed="0.000196"/>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
 <arg>${status_code}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231014 22:08:27.087" endtime="20231014 22:08:27.089"/>
+<status status="PASS" start="2025-08-31T11:48:59.832632" elapsed="0.000138"/>
 </kw>
-<kw name="Convert To String" library="BuiltIn">
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2025-08-31T11:48:59.833374" level="INFO">${body} = {"responseCode": 400, "message": "Email already exists!"}</msg>
 <var>${body}</var>
 <arg>${response.content}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20231014 22:08:27.090" level="INFO">${body} = {"responseCode": 400, "message": "Email already exists!"}</msg>
-<status status="PASS" starttime="20231014 22:08:27.089" endtime="20231014 22:08:27.090"/>
+<status status="PASS" start="2025-08-31T11:48:59.832876" elapsed="0.000525"/>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
 <arg>${body}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231014 22:08:27.090" endtime="20231014 22:08:27.091"/>
+<status status="PASS" start="2025-08-31T11:48:59.833520" elapsed="0.000125"/>
 </kw>
-<kw name="Should Contain" library="BuiltIn">
+<kw name="Should Contain" owner="BuiltIn">
 <arg>${body}</arg>
 <arg>"responseCode": 400</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" starttime="20231014 22:08:27.091" endtime="20231014 22:08:27.091"/>
+<status status="PASS" start="2025-08-31T11:48:59.833741" elapsed="0.000114"/>
 </kw>
-<kw name="Should Contain" library="BuiltIn">
+<kw name="Should Contain" owner="BuiltIn">
 <arg>${body}</arg>
 <arg>"message": "Email already exists!"</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" starttime="20231014 22:08:27.091" endtime="20231014 22:08:27.091"/>
+<status status="PASS" start="2025-08-31T11:48:59.833956" elapsed="0.000103"/>
 </kw>
-<kw name="Get From Dictionary" library="Collections">
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-08-31T11:48:59.834595" level="INFO">${contentTypeValue} = text/html; charset=utf-8</msg>
 <var>${contentTypeValue}</var>
 <arg>${response.headers}</arg>
 <arg>Content-Type</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20231014 22:08:27.092" level="INFO">${contentTypeValue} = text/html; charset=utf-8</msg>
-<status status="PASS" starttime="20231014 22:08:27.092" endtime="20231014 22:08:27.092"/>
+<status status="PASS" start="2025-08-31T11:48:59.834189" elapsed="0.000427"/>
 </kw>
-<kw name="Should Be Equal" library="BuiltIn">
+<kw name="Should Be Equal" owner="BuiltIn">
 <arg>${contentTypeValue}</arg>
 <arg>text/html; charset=utf-8</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20231014 22:08:27.092" endtime="20231014 22:08:27.093"/>
+<status status="PASS" start="2025-08-31T11:48:59.834720" elapsed="0.000125"/>
 </kw>
-<status status="PASS" starttime="20231014 22:08:25.867" endtime="20231014 22:08:27.093"/>
+<status status="PASS" start="2025-08-31T11:48:58.714209" elapsed="1.120771"/>
 </test>
-<status status="PASS" starttime="20231014 22:08:14.263" endtime="20231014 22:08:27.094"/>
+<status status="PASS" start="2025-08-31T11:48:47.794687" elapsed="12.040804"/>
+</suite>
+<status status="PASS" start="2025-08-31T11:48:47.785587" elapsed="12.050483"/>
 </suite>
 <statistics>
 <total>
@@ -772,7 +775,8 @@
 <tag>
 </tag>
 <suite>
-<stat pass="11" fail="0" skip="0" id="s1" name="REST-API-Automation">REST-API-Automation</stat>
+<stat name="TestCase" id="s1" pass="11" fail="0" skip="0">TestCase</stat>
+<stat name="API-Automation" id="s1-s1" pass="11" fail="0" skip="0">TestCase.API-Automation</stat>
 </suite>
 </statistics>
 <errors>

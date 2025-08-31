@@ -34,8 +34,8 @@ Before you begin, ensure you have the following installed:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/API-Automation-with-RobotFramework.git
-    cd api-automation-robotframework
+    git clone https://github.com/Veda150698/automation-for-robot-analyser-.git
+    cd automation-for-robot-analyser-
     ```
 
 2. Install dependencies:
@@ -71,16 +71,14 @@ Execute Robot Framework tests with the following command:
 # Project Structure
 
 ```bash
-/API-Automation-with-RobotFramework
+/automation-for-robot-analyser-
 |-- TestCase/
 |   |-- API-Automation.robot
 |-- devdata/
 |   |-- example.env.json
-|-- .gitignore
 |-- README.md
 
 ```
 * TestCase/: Contains Robot Framework test files for API automation.
 * devdata/: Contains files that define static data for your tests, such as JSON files.
-* .gitignore: Specifies files and directories to be ignored by Git.
 
